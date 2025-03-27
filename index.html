@@ -9,6 +9,7 @@
   <body>
     <header>
       <div id="container">
+        <!-- 상단 왼쪽 -->
         <div id="left_contents">
           <div class="list_content">
             <img id="list" src="./image/list.png" alt="list" />
@@ -17,36 +18,66 @@
             <img id="logo" src="./image/melonlogo.png" alt="logo" />
           </div>
           <div id="search_content">
-            <img src="./image/search.png" alt="find" />
-            <input type="text" />
+            <img id="search_img" src="./image/search.png" alt="find" />
+            <input id="search" type="text" placeholder="음악이 필요한 순간" />
           </div>
         </div>
+        <!-- 상단 오른쪽 -->
         <div id="right_contents">
-          <input type="button" value="가입하기" />
-          <input type="button" value="로그인하기" />
+          <div class="right_content">
+            <input id="signup" type="button" value="가입하기" />
+          </div>
+          <div class="right_content">
+            <input id="login" type="button" value="로그인하기" />
+          </div>
         </div>
       </div>
     </header>
     <main>
       <div id="info">
         <aside>
-          <div id="aside_top">
-            <img src="" alt="icon" />
-            <span>로그인</span>
+          <div class="aside_contents">
+            <div id="login_content">
+              <img src="image/aside/user.png" alt="icon" />
+              <span>로그인</span>
+            </div>
+            <div id="buy_content">
+              <button>이용권 구매</button>
+            </div>
           </div>
-          <div></div>
-          <div id="aside_middl">
+          <div class="aside_contents">
+            <p>멜론 추천</p>
             <ul>
-              <li>멜론 차트</li>
-              <li>최신 음악</li>
-              <li>마이 뮤직</li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/chart.png" alt="" />
+                <span class="aside_text">멜론 차트</span>
+              </li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/music.png" alt="" />
+                <span class="aside_text">최신 음악</span>
+              </li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/love.png" alt="" />
+                <span class="aside_text">마이 뮤직</span>
+              </li>
             </ul>
           </div>
-          <div id="aside_bottom">
+          <hr />
+          <div class="aside_contents">
+            <p>멜론 서비스 더보기</p>
             <ul>
-              <li>서비스소개</li>
-              <li>이용권</li>
-              <li>선물</li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/trophy.png" alt="" />
+                <span class="aside_text">뮤직 어워드</span>
+              </li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/event.png" alt="" />
+                <span class="aside_text">이벤트</span>
+              </li>
+              <li class="aside_content">
+                <img class="aside_img" src="image/aside/ticket.png" alt="" />
+                <span class="aside_text">멜론 티켓</span>
+              </li>
             </ul>
           </div>
           <div id="language">
@@ -54,7 +85,7 @@
             <span>한국어</span>
           </div>
         </aside>
-        <!-- 메인 영역 -->
+        <!-- 본문 영역 -->
         <div id="contents">
           <div class="content">
             <div id="Ad_content">
@@ -63,7 +94,7 @@
           </div>
           <div class="content">
             <h2>인기 아티스트</h2>
-            <div id="atists">
+            <div id="artists">
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -71,27 +102,6 @@
                     src="./image/profile/G-DRAGON.jpg"
                     alt="프로필사진"
                   />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
-              <div class="profile_content">
-                <div class="profile">
-                  <img class="profile_img" src="" alt="프로필사진" />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
-              <div class="profile_content">
-                <div class="profile">
-                  <img class="profile_img" src="" alt="프로필사진" />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
-              <div class="profile_content">
-                <div class="profile">
-                  <img class="profile_img" src="" alt="프로필사진" />
                 </div>
                 <p>G-DRAGON</p>
                 <p>아티스트</p>
@@ -108,30 +118,10 @@
                 <p>G-DRAGON</p>
                 <p>아티스트</p>
               </div>
-              <div class="album_content">
-                <div class="album">
-                  <img class="album_img" src="" alt="앨범사진" />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
-              <div class="album_content">
-                <div class="album">
-                  <img class="album_img" src="" alt="앨범사진" />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
-              <div class="album_content">
-                <div class="album">
-                  <img class="album_img" src="" alt="앨범사진" />
-                </div>
-                <p>G-DRAGON</p>
-                <p>아티스트</p>
-              </div>
             </div>
           </div>
         </div>
+        <div id="playbar"></div>
       </div>
     </main>
   </body>
