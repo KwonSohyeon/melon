@@ -14,13 +14,17 @@
   font-family: "Pretendard-Regular";
 }
 
+body{
+  background-color: #121212;
+}
+
 /* header 부분 */
 #container {
   width: 100%;
   height: 70px;
   position: fixed;
   display: flex;
-  border: 1px solid black;
+  background-color: #000;
 }
 
 /* 상단 왼쪽 */
@@ -28,7 +32,6 @@
   width: 50%;
   display: flex;
   align-items: center;
-  border: 1px solid dodgerblue;
 }
 
 .list_content,
@@ -37,7 +40,6 @@
   height: 40px;
   margin: 5px 15px;
   text-align: center;
-  border: 1px solid darkblue;
 }
 
 #list,
@@ -52,8 +54,8 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+  border: 1px solid #fff;
   border-radius: 150px;
-  border: 1px solid rgb(255, 103, 103);
 }
 
 #search_img {
@@ -66,6 +68,8 @@
   width: 80%;
   border: none;
   outline: none;
+  color: #fff;
+  background-color: #000;
 }
 
 /* 상단 오른쪽 */
@@ -78,7 +82,6 @@
 
 .right_content {
   margin-right: 30px;
-  border: 1px solid violet;
 }
 
 #signup,
@@ -89,20 +92,25 @@
 
 #signup {
   width: 100px;
+  border: none;
+  color: #fff;
+  background-color: #000;
 }
 
 #login {
   width: 160px;
+  border: none;
 }
 
 /* main 영역 */
 main {
   width: 100%;
-  border: 1px solid saddlebrown;
 }
 
 #info {
   display: flex;
+  color: #fff;
+  background-color: #000;
 }
 
 aside {
@@ -111,13 +119,11 @@ aside {
   position: fixed;
   margin: 70px 0;
   padding: 20px;
-  border: 1px solid rgb(255, 113, 113);
 }
 
 .aside_contents,
 #language_contents {
   padding: 10px;
-  border: 1px solid darkblue;
 }
 
 #login_content,
@@ -125,7 +131,6 @@ aside {
   padding: 20px 0px;
   width: 100%;
   text-align: center;
-  border: 1px solid firebrick;
 }
 
 #login_content span {
@@ -138,13 +143,14 @@ aside {
   height: 40px;
   font-size: 16px;
   font-weight: bold;
+  border: none;
+  background-image: url("./image/back.png");
 }
 
 .aside_content {
   padding: 10px;
   display: flex;
   align-items: center;
-  border: 1px solid darkgoldenrod;
 }
 
 .aside_text {
@@ -174,8 +180,10 @@ aside {
 .language button {
   width: 50%;
   height: 30px;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 150px;
-  background-color: none;
+  background-color: #000;
 }
 
 /* 본문 영역 */
@@ -183,18 +191,24 @@ aside {
   width: 85%;
   margin-left: 15%;
   margin-top: 70px;
-  border: 1px solid rgb(25, 132, 255);
   overflow: hidden;
 }
 
 .content {
   padding: 30px;
-  border: 1px solid aqua;
 }
 
 h2 {
   margin: 20px 0;
   color: #04e632;
+}
+
+#artists,
+#albums,
+#populas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #chat_contents {
@@ -203,25 +217,24 @@ h2 {
   border: 1px solid saddlebrown;
 }
 
-#Ad {
-  width: 100%;
-  height: 300px;
-}
-
-#artists,
-#albums {
+.popula_content,
+.profile_content,
+.album_content{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  
+  flex-direction: column;  
+  align-items: center;      
 }
 
 .profile,
-.album {
+.album,
+.popula {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  border: 1px solid darkgoldenrod;
-  border-radius: 3%;
+  text-align: left;
+  border-radius: 10px;
 }
 
 .profile {
@@ -229,9 +242,18 @@ h2 {
 }
 
 .profile_img,
-.album_img {
+.album_img,
+.popula_img {
   width: 100%;
+  display: flex;
   object-fit: cover;
+}
+
+.popula_content p,
+.profile_content p,
+.album_content p{
+  width: 200px;
+  margin-top: 5px;
 }
 
 /* 플레이바 스타일 */
