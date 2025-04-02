@@ -7,22 +7,26 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header 영역 -->
     <header>
       <div id="container">
-        <!-- 상단 왼쪽 -->
+        <!-- 상단 왼쪽 콘텐츠 (메뉴, 로고, 검색창 등) -->
         <div id="left_contents">
+          <!-- 메뉴 아이콘 -->
           <div class="list_content">
             <img id="list" src="./image/list.png" alt="list" />
           </div>
+          <!-- 로고 이미지 -->
           <div class="logo_content">
             <img id="logo" src="./image/melonlogo.png" alt="logo" />
           </div>
+          <!-- 검색창 -->
           <div id="search_content">
             <img id="search_img" src="./image/search.png" alt="find" />
             <input id="search" type="text" placeholder="음악이 필요한 순간" />
           </div>
         </div>
-        <!-- 상단 오른쪽 -->
+        <!-- 상단 오른쪽 콘텐츠 (가입/로그인 버튼 등) -->
         <div id="right_contents">
           <div class="right_content">
             <input id="signup" type="button" value="가입하기" />
@@ -33,21 +37,27 @@
         </div>
       </div>
     </header>
+
+    <!-- Main 콘텐츠 영역 -->
     <main>
       <div id="info">
+        <!-- 사이드바 (로그인, 구매, 추천, 서비스 더보기 등) -->
         <aside>
           <div class="aside_contents">
+            <!-- 로그인 정보 -->
             <div id="login_content">
               <img src="image/aside/user.png" alt="icon" />
               <span>로그인</span>
             </div>
+            <!-- 이용권 구매 버튼 -->
             <div id="buy_content">
               <button>이용권 구매</button>
             </div>
           </div>
           <div class="aside_contents">
-            <p>멜론 추천</p>
+            <strong>멜론 추천</strong>
             <ul>
+              <!-- 추천 항목들 -->
               <li class="aside_content">
                 <img class="aside_img" src="image/aside/chart.png" alt="" />
                 <span class="aside_text">멜론 차트</span>
@@ -64,8 +74,9 @@
           </div>
           <hr />
           <div class="aside_contents">
-            <p>멜론 서비스 더보기</p>
+            <strong>멜론 서비스 더보기</strong>
             <ul>
+              <!-- 추가 서비스 항목들 -->
               <li class="aside_content">
                 <img class="aside_img" src="image/aside/trophy.png" alt="" />
                 <span class="aside_text">뮤직 어워드</span>
@@ -81,25 +92,38 @@
             </ul>
           </div>
           <div id="language_contents">
+            <!-- 이용 약관 및 언어 설정 -->
             <div class="link">
-              <a href="/notice">공지사항</a> | 
-              <a href="/terms">이용약관</a> | 
-              <a href="/membership-terms">멤버십약관</a>
+              <a href="#">공지사항</a> | <a href="#">이용약관</a> |
+              <a href="#">멤버십약관</a>
             </div>
             <div class="language">
               <button>한국어</button>
             </div>
+          </div>
         </aside>
-        <!-- 본문 영역 -->
+
+        <!-- 본문 영역 (아티스트, 앨범 등 콘텐츠) -->
         <div id="contents">
+          <!-- 차트 영역 -->
           <div class="content">
-            <div id="Ad_content">
-              <img id="Ad" src="" alt="광고" />
+            <div id="chat_contents">
+              <div class="chat_left">
+                <div class="chat_content">
+                  <div>
+                    <img src="" alt="" />
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="chat_right"></div>
             </div>
           </div>
+          <!-- 인기 아티스트 섹션 -->
           <div class="content">
             <h2>인기 아티스트</h2>
             <div id="artists">
+              <!-- G-DRAGON 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -111,6 +135,7 @@
                 <p>G-DRAGON</p>
                 <p>아티스트</p>
               </div>
+              <!-- aespa 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -122,6 +147,7 @@
                 <p>aespa</p>
                 <p>아티스트</p>
               </div>
+              <!-- NewJeans 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -133,6 +159,7 @@
                 <p>NewJeans</p>
                 <p>아티스트</p>
               </div>
+              <!-- DAY6 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -144,6 +171,7 @@
                 <p>DAY6</p>
                 <p>아티스트</p>
               </div>
+              <!-- BIGBANG 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -155,6 +183,7 @@
                 <p>BIGBANG</p>
                 <p>아티스트</p>
               </div>
+              <!-- LE SSERAFIM 아티스트 -->
               <div class="profile_content">
                 <div class="profile">
                   <img
@@ -168,21 +197,112 @@
               </div>
             </div>
           </div>
+          <!-- 최신 앨범 섹션 -->
           <div class="content">
             <h2>최신 앨범</h2>
             <div id="albums">
+              <!-- PLAVE 앨범 -->
               <div class="album_content">
                 <div class="album">
-                  <img class="album_img" src="" alt="앨범사진" />
+                  <img
+                    class="album_img"
+                    src="image/albums/Plave.jpg"
+                    alt="앨범사진"
+                  />
                 </div>
+                <p>Caligo Pt.1</p>
+                <p>PLAVE</p>
+              </div>
+              <!-- 임영웅 앨범 -->
+              <div class="album_content">
+                <div class="album">
+                  <img
+                    class="album_img"
+                    src="image/albums/IMHERO.jpg"
+                    alt="앨범사진"
+                  />
+                </div>
+                <p>IM HERO</p>
+                <p>임영웅</p>
+              </div>
+              <!-- 지민 앨범 -->
+              <div class="album_content">
+                <div class="album">
+                  <img
+                    class="album_img"
+                    src="image/albums/JIMIN.jpg"
+                    alt="앨범사진"
+                  />
+                </div>
+                <p>MUSE</p>
+                <p>지민</p>
+              </div>
+              <!-- 제니 앨범 -->
+              <div class="album_content">
+                <div class="album">
+                  <img
+                    class="album_img"
+                    src="image/albums/Jennie.jpg"
+                    alt="앨범사진"
+                  />
+                </div>
+                <p>Ruby</p>
+                <p>제니</p>
+              </div>
+              <!-- 정국 앨범 -->
+              <div class="album_content">
+                <div class="album">
+                  <img
+                    class="album_img"
+                    src="image/albums/Jungkook.jpg"
+                    alt="앨범사진"
+                  />
+                </div>
+                <p>GOLDEN</p>
+                <p>정국</p>
+              </div>
+              <!-- G-DRAGON 앨범 -->
+              <div class="album_content">
+                <div class="album">
+                  <img
+                    class="album_img"
+                    src="image/albums/G-DRAGON.jpg"
+                    alt="앨범사진"
+                  />
+                </div>
+                <p>Übermensch</p>
                 <p>G-DRAGON</p>
-                <p>아티스트</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="playbar"></div>
       </div>
     </main>
+
+    <div id="playbar">
+      <!-- 왼쪽 앨범사진, 아티스트명, 곡 제목 -->
+      <div class="left-content">
+        <img src="image/albums/Plave.jpg" alt="Album" class="album-img" />
+        <div class="song-info">
+          <p class="song-title">Caligo Pt.1</p>
+          <p class="artist-name">PLAVE</p>
+        </div>
+      </div>
+
+      <div class="center-content">
+        <input type="range" id="progress-bar" min="0" max="100" value="0" />
+        <div class="control-buttons">
+          <button class="prev-btn">⏮️</button>
+          <button class="play-btn">▶️</button>
+          <button class="next-btn">⏭️</button>
+        </div>
+      </div>
+
+      <!-- 오른쪽 사운드 조절 -->
+      <div class="right-content">
+        <input type="range" id="volume-control" min="0" max="100" value="50" />
+        <span id="volume-icon">🔊</span>
+      </div>
+    </div>
   </body>
 </html>
