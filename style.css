@@ -114,7 +114,7 @@ aside {
 }
 
 .aside_contents,
-#language {
+#language_contents {
   padding: 20px;
   border: 1px solid darkblue;
 }
@@ -151,6 +151,22 @@ aside {
   font-size: 20px;
   font-weight: bold;
 }
+
+.link a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.link a:hover {
+  color: #007bff;
+}
+
+.link {
+  margin-top: 10px;
+}
+
+
 
 /* 본문 영역 */
 #contents {
