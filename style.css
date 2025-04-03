@@ -44,7 +44,7 @@ body{
 
 #list,
 #logo {
-  width: 100%;
+  width: 30px;
   height: 100%;
   object-fit: cover;
 }
@@ -131,6 +131,7 @@ aside {
   padding: 20px 0px;
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 #login_content span {
@@ -141,22 +142,58 @@ aside {
 #buy_content button {
   width: 100%;
   height: 40px;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   border: none;
+  border-radius: 5px;
   background-image: url("./image/back.png");
+  cursor: pointer;
+}
+
+#login_content img,
+#login_content span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aside_contents p{
+  color: #8d8d8d;
 }
 
 .aside_content {
+  margin-top: 10px;
   padding: 10px;
   display: flex;
   align-items: center;
+}
+
+.aside_content:hover{
+  cursor: pointer;
+  color: #04e632;
+  border-radius: 5px;
+  background-color: #313131;
+}
+
+.aside_content:hover .aside_img {
+  filter: invert(40%) sepia(100%) saturate(400%) hue-rotate(85deg);
 }
 
 .aside_text {
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
+}
+
+hr{
+  margin: 30px 0;
+  border: none;
+  height: 2px;
+  background-color: #333;
+}
+
+.link {
+  margin-top: 10px;
 }
 
 .link a {
@@ -166,11 +203,11 @@ aside {
 }
 
 .link a:hover {
-  color: #007bff;
+  color: #fff;
 }
 
-.link {
-  margin-top: 10px;
+.link span{
+  color: #333;
 }
 
 .language {
@@ -186,6 +223,10 @@ aside {
   background-color: #000;
 }
 
+.language button:hover{
+  color: #000;
+  background-color: #fff;
+}
 /* 본문 영역 */
 #contents {
   width: 85%;
@@ -199,7 +240,7 @@ aside {
 }
 
 h2 {
-  margin: 20px 0;
+  margin: 20px 20px;
   color: #04e632;
 }
 
@@ -214,17 +255,49 @@ h2 {
 #chat_contents {
   width: 100%;
   height: 400px;
-  border: 1px solid saddlebrown;
+  display: flex;
+}
+
+.chat_left,
+.chat_right{
+  width: 50%;
+}
+
+.chat_content{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.chat_img,
+.chat_rank,
+.chat_img{
+  margin: 10px;
+}
+
+.chat_img img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .popula_content,
 .profile_content,
 .album_content{
   width: 100%;
+  padding: 20px;
   display: flex;
   justify-content: center;  
   flex-direction: column;  
   align-items: center;      
+}
+
+.popula_content:hover,
+.profile_content:hover,
+.album_content:hover{
+  border-radius: 5px;
+  background-color: #313131;
 }
 
 .profile,
@@ -316,7 +389,7 @@ h2 {
 
 #progress-bar {
   width: 200px;
-  margin-bottom: 10px; /* 재생바와 버튼 사이의 공간을 만듭니다 */
+  margin-bottom: 10px;
 }
 
 .control-buttons {
@@ -348,4 +421,48 @@ h2 {
 
 #volume-icon {
   font-size: 20px;
+}
+
+footer {
+  height: 200px;
+  background-color: #000; /* 블랙 배경 */
+  color: #fff; /* 하얀 텍스트 */
+  padding: 20px 0;
+}
+
+.footer-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #04e632; /* 연두색으로 강조 */
+}
+
+.footer-logo,
+.footer-links,
+.footer-copyright {
+  margin-bottom: 10px;
 }
